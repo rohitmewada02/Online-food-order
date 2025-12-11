@@ -14,3 +14,49 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+🚀 Day 3 – React Register Form with Validation & react-hot-toast
+
+Aaj maine React me ek Register Form Component banaya, jisme maine kaafi important concepts use kiye:
+
+✔ What I Built Today
+
+Fully working Register Form
+
+Used useState hook for form inputs
+
+Email, password & empty field validations
+
+react-hot-toast for better User Experience
+
+Data ko sessionStorage me store kiya
+
+useNavigate() se login page par redirect
+
+Background image set using inline style
+
+✔ Validations
+
+All fields must be filled
+
+Email must contain @ and .com
+
+Password > 5 characters
+
+Error messages using toast.error
+
+Success message using toast.success
+
+✔ Technologies Used
+
+React (Vite)
+
+useState hook
+
+react-router-dom
+
+react-hot-toast
+
+sessionStorage
+
+📂 Folder: /src/Register.jsx
