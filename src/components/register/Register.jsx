@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import jeni from '../image/jeni.jpg';
+import jeni from '../image/jeni.jpg'
 import toast from "react-hot-toast";
+//import './register.css'
 
 function Register() {
   const [username, setUsername] = useState("");
@@ -36,53 +37,58 @@ else{
 
   return (
     <div
+      className="w-full h-screen bg-cover bg-center flex justify-center items-center"
       style={{
         backgroundImage: `url(${jeni})`
       }}
     >
-      <div>
-        <h1>
+      <div className="bg-white/70 backdrop-blur-md p-10 rounded-xl shadow-2xl w-[400px]">
+        <h1 className="text-3xl font-semibold text-center mb-5">
           Register Form
         </h1>
 
         {nameErr && (
-          <p>
+          <p className="text-red-600 text-center mb-3">
             *Please fill every input field*
           </p>
         )}
 
-        <label>
-          <p>Name</p>
+        <label className="block mb-4">
+          <p className="font-medium">Name</p>
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Enter your name"
+            className="w-full bg-transparent border-b border-gray-500 outline-none py-1"
           />
         </label>
 
-        <label>
-          <p>Email</p>
+        <label className="block mb-4">
+          <p className="font-medium">Email</p>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
+            className="w-full bg-transparent border-b border-gray-500 outline-none py-1"
           />
         </label>
 
-        <label>
-          <p>Password</p>
+        <label className="block mb-6">
+          <p className="font-medium">Password</p>
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter password"
+            className="w-full bg-transparent border-b border-gray-500 outline-none py-1"
           />
         </label>
 
         <button
           onClick={submithandler}
+          className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-medium"
         >
           Register
         </button>
@@ -92,6 +98,3 @@ else{
 }
 
 export default Register;
-
-
-
