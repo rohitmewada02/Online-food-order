@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import jeni from '../image/jeni.jpg'
 import toast from "react-hot-toast";
-//import './register.css'
 
 function Register() {
   const [username, setUsername] = useState("");
@@ -17,11 +16,9 @@ function Register() {
       setNameErr(true)
 }
 else if(!email.includes('@','.','com')){
-  //alert('please Enter valid email address')
   toast.error('Please enter valid email address')
 }
 else if(password.length<5){
-  //alert('please enter the password more than five characters')
   toast.error("please enter the password more than five characters")
 }
 else{
