@@ -43,6 +43,7 @@ function Login() {
       }}
     >
 
+      {/* Transparent Card */}
       <div className="bg-white/80 shadow-xl rounded-xl px-10 py-10 w-[380px]">
 
         <h1 className="text-3xl font-bold text-center mb-6">Login</h1>
@@ -53,6 +54,7 @@ function Login() {
           </p>
         )}
 
+        {/* Username */}
         <label>
           <p className="font-medium">Username</p>
           <input
@@ -64,6 +66,7 @@ function Login() {
           />
         </label>
 
+        {/* Password */}
         <label>
           <p className="font-medium mt-4">Password</p>
           <input
@@ -75,6 +78,7 @@ function Login() {
           />
         </label>
 
+        {/* Login Button */}
         <button
           onClick={submithandeler}
           className="w-full mt-6 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition"
