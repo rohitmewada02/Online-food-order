@@ -4,6 +4,7 @@ import slide1  from '../image/slide1.jpg' ;
 import slide2  from '../image/slide2.jpg' ;
 import slide3  from '../image/slide3.jpg' ;
 import Imageslider from '../Imageslider/Imageslider';
+import Caterogy from '../caterories/Caterogy';
 
 function Home() {
 
@@ -16,10 +17,11 @@ function Home() {
     <div>
       <Navbar/>
       <div className=''>
-      <div className=''>
+          <div className=''>
               <Imageslider slides={slides} />
+          </div>
       </div>
-</div>
+      <Caterogy/>
     </div>
   )
 }
