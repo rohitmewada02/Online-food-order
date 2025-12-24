@@ -5,6 +5,7 @@ import slide2  from '../image/slide2.jpg' ;
 import slide3  from '../image/slide3.jpg' ;
 import Imageslider from '../Imageslider/Imageslider';
 import Caterogy from '../caterories/Caterogy';
+import IndianFood from '../caterories/IndianFood';
 
 function Home() {
 
@@ -22,6 +23,9 @@ function Home() {
           </div>
       </div>
       <Caterogy/>
+      <div>
+           <IndianFood/>
+      </div>
     </div>
   )
 }
